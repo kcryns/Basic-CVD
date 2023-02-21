@@ -135,6 +135,7 @@
     position: relative;
     position: fixed;
     width: 100%;
+    z-index: 99;
 }
 .header .header__wrapper{
     display: flex;
@@ -285,6 +286,51 @@ transition: 300ms;
     }
     
 }
+/*-------------------Services Section--------------------*/
+.hm-services{
+    background: #2b2b2b;
+    padding: 5rem 0;
+    
+}
+.hm-services .hm-services__item{
+    text-align: center;
+    margin: 0 2rem;
+    
+}
+/* .hm-services .hm-services__item:nth-child(2){
+    margin: 0 5rem;
+} */
+.hm-services .hm-services__item i{
+    font-size: 7rem;
+    color: #ffa700;
+    margin-bottom: 2rem;
+}
+.hm-services .hm-services__item h4{
+    color: #ffa700;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+.hm-services .hm-services__item p{
+    color: #ffffff;
+    margin: 2rem;
+    text-align: justify;
+}
+.hm-services .hm-services__wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+@media screen and (max-width:500px){
+    .hm-services .hm-services__wrapper{
+        display: block;
+    }
+    .hm-services .hm-services__item{
+        max-width: 40rem;
+        margin: 0 auto;
+        margin-top: 10rem;
+    }
+
+}
 /*-------------------About Section--------------------*/
 .about__me .banner__text h1{
     color: #ffa700;
@@ -308,17 +354,24 @@ transition: 300ms;
 .about__me .banner__text{
     margin-left: 20rem;
 }
+.about__me .img{
+    position: relative;
+}
+.about__me .img .img1{
+    position: absolute;
+    opacity: .5;
+}
 @media screen and (max-width:500px) {
     .about__me .banner__wrapper {
         flex-direction: column;
     }
-    .about__me img{
+.about__me img{
         width: 25rem;
         margin-bottom: 3rem;
 }
 .about__me .banner__text{
     margin-left: 0;
-
+    text-align: center;
 
 }
 .about__me .banner__text h1{
