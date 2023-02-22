@@ -515,6 +515,135 @@ transition: 300ms;
         margin: 1rem 0;
     }
 }
+
+
+/*----------------------------------------About page------------------------------------*/
+.About-me{
+    padding: 15rem 0;
+    padding-bottom : 5rem;
+}
+.About-me .aboutme__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 10rem;
+}
+.About-me .about--text h1{
+    color: #ffa700;
+    font-size: 10rem;
+    font-weight: 700;
+    line-height: .7;
+    margin-bottom: 7rem;
+}
+.About-me .about--text h3{
+    margin-bottom: 2rem;
+}
+.About-me .about--text p{
+   max-width: 47rem;
+   text-align: justify;
+   margin-bottom: 2rem;
+}
+.About-me .about--icon ul li a i{
+    color: #ffa700;
+    font-size: 2.5rem;
+    margin-top: 5rem;
+    margin-right: 1rem;
+}
+.About-me .about--icon ul li a i:hover{
+    color: #2b2b2b;
+}
+.About-me .down i{
+    display: flex;
+    justify-content: center;
+    color: #ffa700;
+    font-size: 5rem;
+}
+.About-me .down i:hover{
+    color: #2b2b2b;
+}
+@media screen and (max-width:500px){
+    .About-me .aboutme__wrapper {
+        flex-direction: column-reverse;
+    }
+    .About-me .about--text h3{
+        text-align: center;
+    }
+
+    .About-me img{
+        width: 25rem;
+        margin-bottom: 3rem;
+    }
+    .About-me .about--text h1{
+        max-width: fit-content;
+        font-size: 3rem;
+        margin: 2rem auto;
+    }
+    .About-me .about--icon{
+        text-align: center;
+        margin-bottom: 5rem;
+    }
+    
+}
+/*----------------------------------------projects------------------------------------*/
+.projects{
+    background: #2b2b2b;
+    padding: 5rem 0;
+}
+
+.projects .project__text{
+   margin-bottom: 5rem;
+}
+.projects .project__text h2{
+    color: #ffa700;
+    font-size: 3rem;
+    font-weight: 700;
+}
+.projects .project__text p{
+    color:#ffffff;
+    margin-top: 1rem;
+}
+.projects .project__wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5rem;
+    /* margin-top: 7rem; */
+}
+.projects .project__card{
+    background: #ffffff;
+    border-radius: 2rem;
+    /* margin-top: 5rem; */
+
+}
+.projects .project__card img{
+    width: 100%;
+}
+.projects .project__card .cards__text{
+    padding: 2rem;
+    padding-bottom: 5rem;
+}
+.projects .project__card .cards__text h4{
+    color: #ffa700;
+    font-weight: 600;
+
+}
+.projects .project__card .cards__text p{
+    text-align: justify;
+    margin: 2rem 0;
+}
+@media screen and (max-width:500px){
+    .projects .project__text{
+        text-align: center;
+    }
+    .projects .project__wrapper{
+        display: block;
+        
+    }
+    .projects .project__card{
+        margin: 0 5rem;
+        margin-bottom: 5rem;
+        }
+    
+}
 /*-------------------REPEATABLE PATTERN--------------------*/
 .btn{
     padding: 1.2rem 1.5rem;
