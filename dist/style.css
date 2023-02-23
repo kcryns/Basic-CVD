@@ -526,12 +526,12 @@ transition: 300ms;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 0 10rem;
+    margin: 0 5rem;
 }
 .About-me .about--text h1{
     color: #ffa700;
     font-size: 10rem;
-    font-weight: 700;
+    font-weight: 700;   
     line-height: .7;
     margin-bottom: 7rem;
 }
@@ -539,7 +539,7 @@ transition: 300ms;
     margin-bottom: 2rem;
 }
 .About-me .about--text p{
-   max-width: 47rem;
+   max-width: 50rem;
    text-align: justify;
    margin-bottom: 2rem;
 }
@@ -548,17 +548,19 @@ transition: 300ms;
     font-size: 2.5rem;
     margin-top: 5rem;
     margin-right: 1rem;
+    transition: 300ms;
 }
 .About-me .about--icon ul li a i:hover{
     color: #2b2b2b;
 }
-.About-me .down i{
+.About-me .down a i{
     display: flex;
     justify-content: center;
     color: #ffa700;
-    font-size: 5rem;
+    font-size: 5rem;   
+    transition: 300ms;
 }
-.About-me .down i:hover{
+.About-me .down a i:hover{
     color: #2b2b2b;
 }
 @media screen and (max-width:500px){
@@ -582,6 +584,10 @@ transition: 300ms;
         text-align: center;
         margin-bottom: 5rem;
     }
+    /* .About-me .about--text p{
+        margin: 0 auto;
+
+    } */
     
 }
 /*----------------------------------------projects------------------------------------*/
@@ -644,6 +650,63 @@ transition: 300ms;
         }
     
 }
+/*----------------------------------------Updates------------------------------------*/
+.updates{
+    background: #ffffff;
+    padding: 5rem 0;
+}
+.updates .updates__title{
+    padding-top: 15rem;
+}.updates .updates__title h1{
+   color: #ffa700;
+   font-size: 5rem;
+   font-weight: 800;
+   margin-bottom: 2rem;
+}
+.updates .updates__wrapper{
+    display: grid;
+    grid-template-columns: 2.5fr 1.5fr;
+}
+.updates .left__item{
+    padding: 5rem 0;
+    /* border-bottom: 1px solid #2b2b2b; */
+}
+.updates .left__item:last-child{
+    padding-bottom: 0;
+    padding-top: 5rem 0;
+    /* border-bottom: 1px solid #2b2b2b; */
+}
+.updates .left__item:not(:last-child){
+    border-bottom: 1px solid #2b2b2b;
+
+}
+.updates .left__item img{
+    width: 100%;
+   
+}
+.updates .updates__author ul{
+    display: flex;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+.updates .updates__author ul li{
+    margin-right: 4rem;
+}
+.updates .updates__author ul li i{
+    margin-right: 1rem;
+}
+.updates .updates__text h3{
+    color: #ffa700;
+    font-size: 3rem;
+    font-weight: 600;
+}
+.updates .updates__text p{
+    margin: 2.5rem 0;
+    text-align: justify;
+}
+.updates .updates__text a{
+    color: #ffa700;
+}
 /*-------------------REPEATABLE PATTERN--------------------*/
 .btn{
     padding: 1.2rem 1.5rem;
@@ -670,4 +733,7 @@ transition: 300ms;
     background:#ffffff;
     color: #2b2b2b;
     
+}
+.bb-1{
+    border-bottom: 1px solid #2b2b2b;
 }
