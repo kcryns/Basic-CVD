@@ -657,7 +657,8 @@ transition: 300ms;
 }
 .updates .updates__title{
     padding-top: 15rem;
-}.updates .updates__title h1{
+}
+.updates .updates__title h1{
    color: #ffa700;
    font-size: 5rem;
    font-weight: 800;
@@ -666,6 +667,7 @@ transition: 300ms;
 .updates .updates__wrapper{
     display: grid;
     grid-template-columns: 2.5fr 1.5fr;
+    grid-gap: 5rem;
 }
 .updates .left__item{
     padding: 5rem 0;
@@ -707,6 +709,233 @@ transition: 300ms;
 .updates .updates__text a{
     color: #ffa700;
 }
+.updates .updates__text a:hover{
+    color: #2b2b2b;
+}
+.updates .updates__categ{
+    padding: 5rem 0;
+    padding-bottom: 9rem;
+}
+.updates .updates__categ h3{
+    color: #ffa700;
+    font-size: 3rem;
+    font-weight: 600;
+}
+.updates .updates__categ table{
+    width: 100%;
+    margin-top: 5rem;
+}
+.updates .updates__categ table tr{
+    height: 5rem;
+}
+/*-------------------right--------------------*/
+.updates .updates__rp{
+    padding: 9rem 0;
+    padding-bottom: 5rem;
+
+}
+.updates .updates__rp h3{
+    color: #ffa700;
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 6rem;
+}
+.updates .rp__item{
+    display: flex;
+    margin-bottom: 4rem;
+}
+.updates .rp__item__text{
+    margin-left: 3rem;
+}
+.updates .rp__item__text h4{
+    font-weight: 700;
+}
+.updates .rp__item__text p{
+    margin-top: 3rem;
+}
+/*-------------------tags--------------------*/
+.updates .updates__tags{
+    padding: 9rem 0;
+}
+.updates .updates__tags h3{
+    color: #ffa700;
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 5rem;
+}
+.updates .tags__item a{
+    padding: 2rem 3rem;
+    margin: .8rem 1rem;
+}
+@media screen and (max-width:500px){
+    .updates .updates__wrapper{
+        display: block;
+    }
+    .updates{
+        padding: 3rem 3rem;
+    }
+    .updates .updates__title{
+        text-align: center;
+        padding-top: 6rem;
+    }
+    .updates .updates__title h1{
+        margin-bottom: 0;
+    }
+    .updates .updates__author ul li{
+        margin-right: 1rem;
+        font-size: 1.09rem;
+    }
+    .updates h3{
+        text-align: center;
+    }
+    .updates .rp__item__text h4{
+        text-align: justify;
+    }
+}
+/*-------------------REPEATABLE PATTERN--------------------*/
+.services1{
+    background: #ffffff;
+    padding: 5rem 0;
+    padding-top: 20rem;
+}
+.services1 .web{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 5rem;
+}
+.services1 .service__text h1{
+    color: #ffa700;
+    font-size: 5rem;
+    font-weight: 800;
+    line-height: 5rem;
+    margin-bottom: 5rem;
+}
+.services1 .service__text p{
+    text-align: justify;
+    max-width: 50rem;   
+    margin-bottom: 2rem;
+}
+.services1 .price h2{
+    color: #ffa700;
+    font-size: 3rem;
+    font-weight: 600;
+}
+.services1 .price{
+    margin-top: 5rem;
+}
+.services1 .price h5{
+    font-size: 1.3rem;
+}
+.services1 .down a i{
+    display: flex;
+    justify-content: center;
+    color: #ffa700;
+    font-size: 5rem; 
+}
+.services2{
+    background: #2b2b2b;
+    padding: 5rem 0;
+    padding-top: 8rem;
+}
+.services2 .graphic{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 5rem;
+}
+.services2 .service__text h1{
+    color: #ffa700;
+    font-size: 5rem;
+    font-weight: 800;
+    line-height: 5rem;
+    margin-bottom: 5rem;
+}
+.services2 .service__text p{
+    text-align: justify;
+    max-width: 50rem;   
+    margin-bottom: 2rem;
+    color: #ffffff;
+}
+.services2 .price h2{
+    color: #ffa700;
+    font-size: 3rem;
+    font-weight: 600;
+}
+.services2 .price{
+    margin-top: 5rem;
+}
+.services2 .price h4{
+    color: #ffffff;
+}
+.services2 .price h5{
+    font-size: 1.3rem;
+    color: #ffffff;
+}
+.services2 .down a i{
+    display: flex;
+    justify-content: center;
+    color: #ffa700;
+    font-size: 5rem; 
+}
+.services3{
+    background: #ffffff;
+    padding: 5rem 0;
+    padding-top: 8rem;
+}
+.services3 .social{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 5rem;
+}
+.services3 .service__text h1{
+    color: #ffa700;
+    font-size: 5rem;
+    font-weight: 800;
+    line-height: 5rem;
+    margin-bottom: 5rem;
+}
+.services3 .service__text p{
+    text-align: justify;
+    max-width: 50rem;   
+    margin-bottom: 2rem;
+}
+.services3 .price h2{
+    color: #ffa700;
+    font-size: 3rem;
+    font-weight: 600;
+}
+.services3 .price{
+    margin-top: 3rem;
+}
+.services3 .price h5{
+    font-size: 1.3rem;
+}
+
+@media screen and (max-width:500px){
+    .services1{
+        padding-top: 15rem;
+    }
+    .services1 .web{
+       flex-direction: column-reverse;
+    }
+    .services1 .web h1{
+        font-size: 4rem;
+        text-align: center;
+     }
+     .services2 .graphic{
+        flex-direction: column;
+     }
+     .services2 .graphic h1{
+        font-size: 4rem;
+        text-align: center;
+     }
+     .services3 .social{
+        flex-direction: column-reverse;
+     }
+     .services3 .social h1{
+        font-size: 4rem;
+        text-align: center;
+     }
+}
 /*-------------------REPEATABLE PATTERN--------------------*/
 .btn{
     padding: 1.2rem 1.5rem;
@@ -736,4 +965,14 @@ transition: 300ms;
 }
 .bb-1{
     border-bottom: 1px solid #2b2b2b;
+}
+.bg-light{
+    background: #ffffff;
+    color: #2b2b2b;
+    border: 2px solid #2b2b2b;
+}
+.bg-light:hover{
+    background: #2b2b2b;
+    color: #ffffff;
+    border: 2px solid #2b2b2b;
 }
